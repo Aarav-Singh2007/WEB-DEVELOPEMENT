@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            /* width: 1394px */
+            width: 80vw;
+
+            background-color: aquamarine;
+            margin: auto;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 1394px */
+            width: 80vw;
+            
+
+            background-color: aquamarine;
+            margin: 23px auto;
+            font-size: 18px;
+        }
+        .container div >{
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+        .container div > div{
+            border: 2px solid blue;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+        
+    </div>
+    <div class="container">This is another div
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tempore.
+        <div>
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam voluptates eius non! Accusamus, hic.
+        </div>
+       </div>
+    </div>
+
+    
+</body>
+</html>
