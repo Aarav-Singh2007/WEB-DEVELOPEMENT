@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: aqua;
+            width: 30vw;
+            height: 80vh;
+        }
+
+        .box {
+            background-color: rgb(255, 77, 0);
+            width: 30px;
+            height: 40px;
+            /* animation-name: Aarav;
+animation-duration: 3s;
+animation-iteration-count: 2;
+animation-timing-function: cubic-bezier(0.07, 0.01, 0, 0.94);
+animation-delay: 1;
+animation-direction: reverse; */
+            animation: Aarav 1s ease-in-out 1s 2 alternate-reverse,
+            Aarav2 1s ease-in-out 1s 2 alternate-reverse;
+        }
+
+        @keyframes Aarav {
+            from {
+                background-color: brown;
+            }
+
+            to {
+                background-color: yellow;
+                transform: translateX(900px);
+            }
+
+        }
+
+        @keyframes Aarav2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(120deg);
+            }
+
+            50% {
+                transform: rotate(160deg);
+            }
+
+            80% {
+                transform: rotate(200deg);
+            }
+
+            100% {
+                transform: rotate(250deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+
+        </div>
+    </div>
+</body>
+
+</html>
