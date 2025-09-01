@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+    </div>
+    <script>
+        // let div
+        // document.querySelector(".container").prepend(div)
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin"," <b> HEy how are u </b>")
+        cont.insertAdjacentHTML("beforeend"," <b> HEy how are u </b>")
+    </script>
+
+</body>
+<script src="script.js"></script>
+</html>
