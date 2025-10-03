@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
+ body{
             background-color: red;
         }
         @media only screen and (max-width: 455px) {
@@ -28,16 +21,3 @@
             margin: 3px;
             background-color: blanchedalmond;
         }
-    </style>
-</head>
-<body>
-    <div>
-        Hey I am red Guy
-    </div>
-    <div class="boxes">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-</body>
-</html>
